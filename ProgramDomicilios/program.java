@@ -1,6 +1,8 @@
 import javax.swing.*;
 
 
-public program{
-    
+class program{  
+    public static void main(String[] args) {
+        
+    }        
 }
