@@ -6,9 +6,5 @@ class program{
         
         
         
-        int Decision1;  
-
-        int Decision2;
-        
     }        
 }
