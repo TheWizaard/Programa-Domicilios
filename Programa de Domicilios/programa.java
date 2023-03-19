@@ -141,7 +141,7 @@ class program{
             case 4 ->{
                 JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Copa Brownie\nEl helado tiene un Valor de $33.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
                 
-                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)PSE\n 3)Generar Recibo",""));
+                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)Generar Recibo",""));
                
              switch (Metodo_Pago) {
                 //TARJETA CREDITO O DEBITO
