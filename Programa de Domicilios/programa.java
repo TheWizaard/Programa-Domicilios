@@ -7,7 +7,7 @@ class program{
     public static void main(String[] args) {
         
         String Nombre_Usuario,Direccion,Correo_Usuario,Nombre_Titular;
-        int DocumentoID,Decision_Tienda,Eleccion_Helado,Confirmacion_Helado,Metodo_Pago,Codigo_tarjeta,Codigo_Seguridad;
+        int DocumentoID,Decision_Tienda,Eleccion_Helado,Metodo_Pago,Codigo_tarjeta,Codigo_Seguridad;
 
 
         JOptionPane.showMessageDialog(null, "Bienvenido a Nuestra APP de Domicilios", "BIENVENIDO",JOptionPane.INFORMATION_MESSAGE);
