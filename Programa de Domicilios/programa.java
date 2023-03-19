@@ -34,7 +34,7 @@ class program{
                     case 1 ->{
                         JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Capricho Maracuya\nEl helado tiene un Valor de $15.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
                         
-                        Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)PSE\n 3)Generar Recibo",""));
+                        Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)Generar Recibo",""));
                        
                      switch (Metodo_Pago) {
                         //TARJETA CREDITO O DEBITO
@@ -66,16 +66,86 @@ class program{
                                 }
                 }
             }
-            //HELADO 2
-            case 2 ->{
+                //HELADO 2
+                   case 2 ->{
 
-                JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Capricho Maracuya\nEl helado tiene un Valor de $15.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Copa Suprema\nEl helado tiene un Valor de $20.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
                 
-                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)Generar Recibo",""));
+                     Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)Generar Recibo",""));
                
                      switch (Metodo_Pago) {
-                  //PSE      
-                  case 1 ->{
+                      //PSE      
+                       case 1 ->{
+
+                     JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago con tarjeta de Credito o Debito", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                      Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de la Trajeta de Credito o Debito",""));
+
+                       Nombre_Titular = JOptionPane.showInputDialog("Digite el Nombre del Titular de la Tarjeta", "");
+
+                    Codigo_Seguridad = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta",""));
+
+                       JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
+
+                      JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $20.000\nValor domicilio: $4.000" + "\nTotal de Pago: $24.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+
+
+                          }
+                //GENERAR RECIBO   
+                case 2 ->{
+
+                JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $20.000\nValor domicilio: $4.000" + "\nTotal de Pago: $24.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        
+                        break;
+                                }
+                                     }
+                    }
+                    //HELADO 3
+                    case 3 ->{
+                        JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Copa Banana Royal\nEl helado tiene un Valor de $30.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
+                        
+                        Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)Generar Recibo",""));
+                       
+                     switch (Metodo_Pago) {
+                        //TARJETA CREDITO O DEBITO
+                        case 1 ->{
+
+                        JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago con tarjeta de Credito o Debito", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                        Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de la Trajeta de Credito o Debito",""));
+
+                        Nombre_Titular = JOptionPane.showInputDialog("Digite el Nombre del Titular de la Tarjeta", "");
+
+                        Codigo_Seguridad = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta",""));
+
+                        JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
+
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $30.000\nValor domicilio: $4.000" + "\nTotal de Pago: $34.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        
+                        break;
+                       }
+                       
+                        //GENERAR RECIBO
+                        case 2 ->{
+
+                            JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                            JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $30.000\nValor domicilio: $4.000" + "\nTotal de Pago: $34.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        
+                        break;
+                                }
+                }
+            }
+            case 4 ->{
+                JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Copa Brownie\nEl helado tiene un Valor de $33.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
+                
+                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)PSE\n 3)Generar Recibo",""));
+               
+             switch (Metodo_Pago) {
+                //TARJETA CREDITO O DEBITO
+                case 1 ->{
 
                 JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago con tarjeta de Credito o Debito", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
 
@@ -87,22 +157,22 @@ class program{
 
                 JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
 
-                JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $15.000\nValor domicilio: $4.000" + "\nTotal de Pago: $19.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
-
-
-                          }
-                //GENERAR RECIBO   
+                JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $33.000\nValor domicilio: $4.000" + "\nTotal de Pago: $37.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                
+                break;
+               }
+               
+                //GENERAR RECIBO
                 case 2 ->{
 
-                JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
 
-                JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $15.000\nValor domicilio: $4.000" + "\nTotal de Pago: $19.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
-                        
-                        break;
-                                }
-                                     }
-                    }
-
+                    JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $33.000\nValor domicilio: $4.000" + "\nTotal de Pago: $37s.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                
+                break;
+                        }
+        }
+    }
                                         }
 
                 } 
@@ -121,6 +191,10 @@ class program{
 
                     //OXXO
                          }
+                case 4 ->{
+
+                    //TIENDA DE DANIEL
+                }
         }
     }
 }
