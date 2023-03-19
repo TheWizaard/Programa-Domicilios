@@ -5,7 +5,7 @@ class program{
     public static void main(String[] args) {
         
         String Nombre_Usuario,Direccion,Correo_Usuario;
-        int DocumentoID,Decision_Tienda,Eleccion_Helado;
+        int DocumentoID,Decision_Tienda,Eleccion_Helado,Confirmacion_Helado;
 
         JOptionPane.showMessageDialog(null, "Bienvenido a Nuestra APP de Domicilios", "BIENVENIDO",JOptionPane.INFORMATION_MESSAGE);
         
@@ -31,13 +31,28 @@ class program{
                     case 1 ->{
                         JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Capricho Maracuya\n El helado tiene un Valor de $15.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
 
+                        JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario " + Nombre_Usuario + "\n Con Documento CC: " + DocumentoID + "\n Su factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
 
+                         
 
                     }
+                  
+
                 }
 
             }
         
+            case 2 ->{
+
+                //DOMINOS PIZZA//
+
+            }
+
+            case 3 ->{
+
+                //OXXO//
+
+            }
 
         }
     }        
