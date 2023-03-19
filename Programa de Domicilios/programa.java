@@ -37,7 +37,7 @@ class program{
                         Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)PSE\n 3)Generar Recibo",""));
                        
                      switch (Metodo_Pago) {
-
+                        //TARJETA CREDITO O DEBITO
                         case 1 ->{
 
                         JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago con tarjeta de Credito o Debito", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
@@ -54,11 +54,16 @@ class program{
                         
                         break;
                        }
-                       case 2 ->{
                        
-                    
-                    
-                    }
+                        //GENERAR RECIBO
+                        case 2 ->{
+
+                            JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                            JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $15.000\nValor domicilio: $4.000" + "\nTotal de Pago: $19.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        
+                        break;
+                                }
                 }
             }
             //HELADO 2
@@ -66,10 +71,10 @@ class program{
 
                 JOptionPane.showMessageDialog(null, "Su eleccion ha sido el Helado Capricho Maracuya\nEl helado tiene un Valor de $15.000", "ELECCION HELADO", JOptionPane.INFORMATION_MESSAGE);
                 
-                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)PSE\n 3)Generar Recibo",""));
+                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog("Seleccione Su Metodo de Pago\n 1)Tarjeta de Credito o Debito\n 2)Generar Recibo",""));
                
                      switch (Metodo_Pago) {
-
+                  //PSE      
                   case 1 ->{
 
                 JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago con tarjeta de Credito o Debito", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
@@ -86,6 +91,15 @@ class program{
 
 
                           }
+                //GENERAR RECIBO   
+                case 2 ->{
+
+                JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nCompra de Un Helado Capricho Maracuya por un valor de $15.000\nValor domicilio: $4.000" + "\nTotal de Pago: $19.000\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        
+                        break;
+                                }
                                      }
                     }
 
