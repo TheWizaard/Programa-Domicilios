@@ -13,10 +13,10 @@ class program{
         Nombre_Usuario = JOptionPane.showInputDialog("INTRODUZCA SU NOMBRE", "");
         Direccion = JOptionPane.showInputDialog("INGRESE SU DIRECCION", "");
         Correo_Usuario = JOptionPane.showInputDialog("INGRESE SU CORREO", "");
-        DocumentoID = Integer.parseInt(JOptionPane.showInputDialog("",""));
+        DocumentoID = Integer.parseInt(JOptionPane.showInputDialog("INGRESE SU DOCUMENTO CC",""));
 
         JOptionPane.showMessageDialog(null,"Sus datos han sido registrados correctamente","AFIRMACION",JOptionPane.INFORMATION_MESSAGE);
 
-        JOptionPane.showInputDialog(null,"Eliga la tienda a la cual desea", Correo_Usuario, DocumentoID)
+        Decision_Tienda = JOptionPane.showInputDialog("SELECCIONE SU TIENDA\n 1)Heladeria Crepes and Waffles\n 2)Dominos Pizza\n 3)OXXO", "");
     }        
 }
