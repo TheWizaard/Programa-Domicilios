@@ -4,6 +4,9 @@ import javax.swing.event.DocumentEvent;
 
 
 class program{  
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
         String Nombre_Usuario,Direccion,Correo_Usuario,Nombre_Titular;
@@ -181,7 +184,50 @@ class program{
                 } 
                 //TIENDA 2, DOMINOS PIZZA
                 case 2 ->{
-                
+                int repetireleccionDP = 1,totalTODO = 0,productosPizza,cantidad,cantidadFinal=0,valor;
+               
+ 
+                JOptionPane.showMessageDialog(null,"Ha Seleccionado Domino's Pizza","Domino's Pizza",JOptionPane.INFORMATION_MESSAGE);
+                while(repetireleccionDP == 1){
+                    productosPizza = Integer.parseInt(JOptionPane.showInputDialog(null, "Le ofrecemos estos productos: \n 1: Pizza Mediana con Jamon y Piña $18.900 \n 2: Domicombo-Pizza Grande + Arequipe Rolls + Gaseosa 1.5 L Valor $45.900 \n 3: Pizza Dominisima- Pizza Mediana + Arequipe Rolls + Gaseosa 1.5 L - Valor $29.000"));
+                    
+                    switch (productosPizza){
+                        case 1: 
+                                JOptionPane.showMessageDialog(null, "Su eleccion ha sido Pizza Mediana Valor $18.900","Confirmación",JOptionPane.INFORMATION_MESSAGE);
+                                cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantas Pizza´s Medianas van a ser?"));
+                                valor = 18900;
+                                totalTODO += valor*cantidad;
+                                cantidadFinal = cantidad;
+                                break;
+                    }
+                    
+                    Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog(null, "Cual es su Metodo de Pago? \n 1: Tarjeta de Credito \n 2: Tarjeta de Debito \n 3: Generar Recibo"));
+                    switch(Metodo_Pago)
+                    {
+                        case 1:
+                                JOptionPane.showMessageDialog(null, "Usted ha elegido Tarjeta de Credito");
+                                Nombre_Titular = JOptionPane.showInputDialog(null, "Nombre Titular de la Tarjeta","Nombre Titular",JOptionPane.INFORMATION_MESSAGE);
+                                Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog(null, "Numero de la Tarjeta","Numero Tarjeta",JOptionPane.INFORMATION_MESSAGE));
+                                Codigo_Seguridad = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta",""));
+                                JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
+                                
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                        break;
+
+                    }
+                    if (productosPizza == 1)
+                    {
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Pizza Mediana por un total de un valor de"+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                    }
+
+                    repetireleccionDP = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere Elegir Otro Producto de Dominos Pizza?"));
+                    
+                }
                 
 
                 break;
@@ -205,12 +251,3 @@ class program{
         
     }
 }
-  
-
-
-
-
-           
-
-    
-
