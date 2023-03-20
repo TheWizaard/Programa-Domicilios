@@ -255,7 +255,7 @@ class program{
                     }
 
                     repetireleccionDP = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere Elegir Otro Producto de Dominos Pizza? \n 1: Si \n 2: No"));
-                    
+                    totalTODO = 0;
                 }
                 
 
