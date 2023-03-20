@@ -199,6 +199,20 @@ class program{
                                 totalTODO += valor*cantidad;
                                 cantidadFinal = cantidad;
                                 break;
+                        case 2:
+                                JOptionPane.showMessageDialog(null, "Su eleccion ha sido Pizza Domicombo Valor $45.900","Confirmación",JOptionPane.INFORMATION_MESSAGE);
+                                cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantas Pizza´s Domicombo van a ser?"));
+                                valor = 45900;
+                                totalTODO += valor*cantidad;
+                                cantidadFinal = cantidad;
+                                break;
+                        case 3:
+                                JOptionPane.showMessageDialog(null, "Su eleccion ha sido Pizza Dominisima Valor $29.900","Confirmación",JOptionPane.INFORMATION_MESSAGE);
+                                cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantas Pizza´s Dominisimas van a ser?"));
+                                valor = 29000;
+                                totalTODO += valor*cantidad;
+                                cantidadFinal = cantidad;
+                                break;
                     }
                     
                     Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog(null, "Cual es su Metodo de Pago? \n 1: Tarjeta de Credito \n 2: Tarjeta de Debito \n 3: Generar Recibo"));
@@ -232,14 +246,14 @@ class program{
                     }
                     if (productosPizza == 1)
                     {
-                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Pizza Mediana por un total de un valor de"+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Pizza Mediana por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
                     }else if (productosPizza == 2){
-
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Domicombo por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
                     }else if (productosPizza == 3){
-                        
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Pizza Dominisima por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
                     }
 
-                    repetireleccionDP = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere Elegir Otro Producto de Dominos Pizza?"));
+                    repetireleccionDP = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere Elegir Otro Producto de Dominos Pizza? \n 1: Si \n 2: No"));
                     
                 }
                 
