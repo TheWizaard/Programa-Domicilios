@@ -209,20 +209,34 @@ class program{
                                 Nombre_Titular = JOptionPane.showInputDialog(null, "Nombre Titular de la Tarjeta","Nombre Titular",JOptionPane.INFORMATION_MESSAGE);
                                 Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog(null, "Numero de la Tarjeta","Numero Tarjeta",JOptionPane.INFORMATION_MESSAGE));
                                 Codigo_Seguridad = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta",""));
-                                JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
+                                int Cuotas = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese numero de cuotas a pagar","Cuotas",JOptionPane.INFORMATION_MESSAGE));
+                                JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario+"\n Referida a: "+Cuotas+" cuotas","DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
                                 
                         break;
                         case 2:
+                                JOptionPane.showMessageDialog(null, "Usted ha elegido Tarjeta de Debito");
+                                Nombre_Titular = JOptionPane.showInputDialog(null, "Nombre Titular de la Tarjeta","Nombre Titular",JOptionPane.INFORMATION_MESSAGE);
+                                Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog(null, "Numero de la Tarjeta","Numero Tarjeta",JOptionPane.INFORMATION_MESSAGE));
+                                Codigo_Seguridad = Integer.parseInt(JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta",""));
+                                JOptionPane.showMessageDialog(null,"Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario + "\nCon Documento CC: " + DocumentoID + "\nSu factura sera enviada a su correo: " + Correo_Usuario,"DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
                         break;
                         case 3:
+                                
+                            JOptionPane.showMessageDialog(null, "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI", "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
                         break;
                         default:
+                            JOptionPane.showMessageDialog(null,"Opcion Invalida","Error",JOptionPane.WARNING_MESSAGE);
                         break;
 
                     }
                     if (productosPizza == 1)
                     {
                         JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Pizza Mediana por un total de un valor de"+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                    }else if (productosPizza == 2){
+
+                    }else if (productosPizza == 3){
+                        
                     }
 
                     repetireleccionDP = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere Elegir Otro Producto de Dominos Pizza?"));
