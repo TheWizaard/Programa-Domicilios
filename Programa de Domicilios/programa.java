@@ -628,7 +628,9 @@ class program {
         }
         // #endregion
        
-        //#region
+        //#region OXXO
+
+        
 
         // TIENDA 3, OXXO
         case 3 -> {
@@ -1916,6 +1918,7 @@ class program {
           }
         }
     // #endregion
+       //#region KFCS
         case 4 -> {
           // KFC
           int repetirKFC = 1, cantidad, valor, totalTODO = 0, cantidadFinal = 0;
@@ -2139,5 +2142,6 @@ class program {
               JOptionPane.INFORMATION_MESSAGE));
     }
   }
-  // #endregion
+
 }
+  // #endregion
