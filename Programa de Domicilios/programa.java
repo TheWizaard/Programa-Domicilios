@@ -332,11 +332,11 @@ class program{
                         break;
                        }
                        if (productosKFC == 1){
-                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Wow Box Duo por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nHace Compra de "+ cantidadFinal +" Wow Box Duo por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
                        }else if (productosKFC == 2){
-                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Wow Bucket Original por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nHace Compra de "+ cantidadFinal +" Wow Bucket Original por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
                        }else if (productosKFC == 3){
-                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de "+ cantidadFinal +" Snack Bucket Gaseosa por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null,"Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID + "\nCorreo: " + Correo_Usuario + "\nHace Compra de "+ cantidadFinal +" Snack Bucket Gaseosa por un total de un valor de "+(totalTODO)+"\nValor domicilio: $4.000 \nTotal de Pago: "+(totalTODO+4000)+"\nTiempo Estimado de Llegada del Producto: 30 Minutos", "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
                        }
                        
                        repetirKFC = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere Elegir Otro Producto de KFC? \n 1: Si \n 2: No"));
@@ -345,7 +345,7 @@ class program{
                 }
                 
             }
-            repetir = Integer.parseInt(JOptionPane.showInputDialog(null, "Volver a la selccion de Tiendas? 1: Si \n 2:No", "Volver", JOptionPane.INFORMATION_MESSAGE));
+            repetir = Integer.parseInt(JOptionPane.showInputDialog(null, "Volver a la seleccion de Tiendas? 1: Si \n 2:No", "Volver", JOptionPane.INFORMATION_MESSAGE));
         }
         
     }
