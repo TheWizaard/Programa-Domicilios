@@ -31,6 +31,7 @@ class program {
                     "SELECCIONE SU TIENDA\n 1)Heladeria Creppes and Waffles\n 2)Dominos Pizza\n 3)OXXO \n 4)KFC", ""));
 
             switch (Decision_Tienda) {
+//#region Creppers
                 // TIENDA 1, CREPPES AND WAFFLES
                 case 1 -> {
                     JOptionPane.showMessageDialog(null,
@@ -280,6 +281,8 @@ class program {
                     }
 
                 }
+//#endregion
+//#region DOMINOS PIZZA
                 // TIENDA 2, DOMINOS PIZZA
                 case 2 -> {
                     int repetireleccionDP = 1, totalTODO = 0, productosPizza, cantidad, cantidadFinal = 0, valor;
@@ -402,6 +405,8 @@ class program {
 
                     break;
                 }
+//#endregion
+//#region OXXO
 
                 // TIENDA 3, OXXO
                 case 3 -> {
@@ -568,22 +573,19 @@ class program {
                                
                         }
                         
-                
-
+//#endregion         
                 case 4 -> {
 
                     // KFC
                     int repetirKFC = 1, cantidad, valor, totalTODO = 0, cantidadFinal = 0;
                     JOptionPane.showMessageDialog(null, "Has seleccionado KFC", "KFC", JOptionPane.INFORMATION_MESSAGE);
                     while (repetirKFC == 1) {
-                        int productosKFC = Integer.parseInt(JOptionPane.showInputDialog(null,
-                                "Los productos que tenemos de KFC son: \n 1: Wow Box Duo $50.000 \n 2: Wow Bucket Original $49.900 \n 3:Snack Bucket Gaseosa $56.000"));
+                        int productosKFC = Integer.parseInt(JOptionPane.showInputDialog(null,"Los productos que tenemos de KFC son: \n 1: Wow Box Duo $50.000 \n 2: Wow Bucket Original $49.900 \n 3:Snack Bucket Gaseosa $56.000"));                      
                         switch (productosKFC) {
                             case 1:
                                 JOptionPane.showMessageDialog(null, "Ha seleccionado el producto Wow Box Duo",
                                         "Wow Box Duo", JOptionPane.INFORMATION_MESSAGE);
-                                cantidad = Integer.parseInt(
-                                        JOptionPane.showInputDialog(null, "Cuantos de este Wow box duo van a ser?"));
+                                cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantos de este Wow box duo van a ser?"));
                                 valor = 50000;
                                 totalTODO += valor * cantidad;
                                 cantidadFinal = cantidad;
@@ -697,4 +699,6 @@ class program {
         }
 
     }
+//#endregion
 }
+
