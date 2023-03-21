@@ -405,8 +405,106 @@ class program {
 
                 // TIENDA 3, OXXO
                 case 3 -> {
+                        int repetirOXXO = 1, totalTODO = 0, productosPizza, cantidad, cantidadFinal = 0, valor,categoriaSeleccion;
+                        JOptionPane.showMessageDialog(null,"Ha seleccionado el OXXO","OXXO",JOptionPane.INFORMATION_MESSAGE);
+                        while(repetirOXXO == 1){
+                                categoriaSeleccion = Integer.parseInt(JOptionPane.showInputDialog(null, "Categoria: \n 1: Paqueteria \n 2: Lacteos \n 3: Aseo"));
+                                switch (categoriaSeleccion) {
+                                        case 1:
+                                        
+                                                int categoriaPaqueteria = Integer.parseInt(JOptionPane.showInputDialog(null,"Selecccione su producto de paquetería: \n 1: Papas Margarita $5.000"));
+                                        switch(categoriaPaqueteria){
+                                                case 1:
+                                                // Papas
+                                                JOptionPane.showMessageDialog(null, "Ha seleccionado las papas margarita que valen $5000");
+                                                cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantas Papas Margarita van a ser?"));
+                                                valor = 5000;
+                                                totalTODO += valor * cantidad;
+                                                cantidadFinal = cantidad;
+                                        
+                                                Metodo_Pago = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                                "Cual es su Metodo de Pago? \n 1: Tarjeta de Credito \n 2: Tarjeta de Debito \n 3: Generar Recibo"));       
 
-                }
+                                                switch (Metodo_Pago) {
+                                                case 1:
+                                                        JOptionPane.showMessageDialog(null, "Usted ha elegido Tarjeta de Credito");
+                                                        Nombre_Titular = JOptionPane.showInputDialog(null, "Nombre Titular de la Tarjeta",
+                                                                "Nombre Titular", JOptionPane.INFORMATION_MESSAGE);
+                                                        Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                                                "Numero de la Tarjeta", "Numero Tarjeta", JOptionPane.INFORMATION_MESSAGE));
+                                                        Codigo_Seguridad = Integer.parseInt(
+                                                                JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta", ""));
+                                                        int Cuotas = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                                                "Ingrese numero de cuotas a pagar", "Cuotas", JOptionPane.INFORMATION_MESSAGE));
+                                                        JOptionPane.showMessageDialog(null,
+                                                                "Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario
+                                                                        + "\nCon Documento CC: " + DocumentoID
+                                                                        + "\nSu factura sera enviada a su correo: " + Correo_Usuario
+                                                                        + "\n Referida a: " + Cuotas + " cuotas",
+                                                                "DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
+
+                                                        break;
+                                                case 2:
+                                                        JOptionPane.showMessageDialog(null, "Usted ha elegido Tarjeta de Debito");
+                                                        Nombre_Titular = JOptionPane.showInputDialog(null, "Nombre Titular de la Tarjeta",
+                                                                "Nombre Titular", JOptionPane.INFORMATION_MESSAGE);
+                                                        Codigo_tarjeta = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                                                "Numero de la Tarjeta", "Numero Tarjeta", JOptionPane.INFORMATION_MESSAGE));
+                                                        Codigo_Seguridad = Integer.parseInt(
+                                                                JOptionPane.showInputDialog("Digite el Codigo de Seguridad de la Tarjeta", ""));
+                                                        JOptionPane.showMessageDialog(null,
+                                                                "Su compra ha sido Confirmada, Usuario: " + Nombre_Usuario
+                                                                        + "\nCon Documento CC: " + DocumentoID
+                                                                        + "\nSu factura sera enviada a su correo: " + Correo_Usuario,
+                                                                "DATOS-FACTURA", JOptionPane.INFORMATION_MESSAGE);
+                                                        break;
+                                                case 3:
+
+                                                        JOptionPane.showMessageDialog(null,
+                                                                "Usted ha elegido el Metodo de Pago para Generar Recibo\nDirijase al punto de pago mas cercano e indique el siguiente codigo de pago: 3234240943553EI",
+                                                                "METODO DE PAGO", JOptionPane.INFORMATION_MESSAGE);
+
+                                                        break;
+                                                default:
+                                                        JOptionPane.showMessageDialog(null, "Opcion Invalida", "Error",
+                                                                JOptionPane.WARNING_MESSAGE);
+                                                        break;
+                                                }
+                                                        JOptionPane.showMessageDialog(null,
+                                                        "Nombre de Usuario: " + Nombre_Usuario + "\nDocumento CC:" + DocumentoID
+                                                        + "\nCorreo: " + Correo_Usuario + "\n Hace Compra de " + cantidadFinal
+                                                        + " Papas Margarita por un total de un valor de " + (totalTODO)
+                                                        + "\nValor domicilio: $4.000 \nTotal de Pago: " + (totalTODO + 4000)
+                                                        + "\nTiempo Estimado de Llegada del Producto: 30 Minutos",
+                                                "Pre-visualizacion de Factura", JOptionPane.INFORMATION_MESSAGE);
+                                                        break;
+                                                }
+                                        break;
+                                     
+                                                    
+                                        case 2:
+                                                int categoriaLacteos = Integer.parseInt(JOptionPane.showInputDialog(null,"Selecccione su producto de Lacteos: \n 1: Yogurt \n 2: Avena","Lacteos",JOptionPane.INFORMATION_MESSAGE));
+                                        break;
+                                        case 3:
+                                                int categoriaAseo = Integer.parseInt(Correo_Usuario)
+                                        break;
+                                                
+                                        default:
+                                        JOptionPane.showMessageDialog(null, "Opcion Inexistente.");
+                                        break;
+                                }
+
+
+
+
+                                repetirOXXO = Integer.parseInt(JOptionPane.showInputDialog(null, "Quiere volver a escojer otra categoria? \n 1: Si \n 2:No"));
+                                totalTODO = 0;        
+                                }
+
+                               
+                        }
+                        
+                
 
                 case 4 -> {
 
