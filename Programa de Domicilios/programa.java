@@ -3,13 +3,12 @@ import javax.print.attribute.standard.JobPriority;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 
-
 class program{  
     /**
      * @param args
      */
     public static void main(String[] args) {
-        
+        ImageIcon Creppes_And_Waffles = new ImageIcon("Programa de Domicilios/TIENDA_CREPPES.jpeg");
         String Nombre_Usuario,Direccion,Correo_Usuario,Nombre_Titular;
         int DocumentoID,Decision_Tienda,Eleccion_Helado,Metodo_Pago,Codigo_tarjeta,Codigo_Seguridad,repetir = 1,seguir = 1;
 
@@ -18,7 +17,7 @@ class program{
         
         JOptionPane.showMessageDialog(null, "Digite los siguientes datos para registrarlo en el sistema", "INGRESO DE DATOS",JOptionPane.INFORMATION_MESSAGE);
         Nombre_Usuario = JOptionPane.showInputDialog("INTRODUZCA SU NOMBRE", "");
-        Direccion = JOptionPane.showInputDialog("INGRESE SU DIRECCION", "");
+        Direccion = JOptionPane.showInputDialog("INGRESE SU DIRECCION", "DIRECCION",);
         Correo_Usuario = JOptionPane.showInputDialog("INGRESE SU CORREO", "");
         DocumentoID = Integer.parseInt(JOptionPane.showInputDialog("INGRESE SU DOCUMENTO CC",""));
 
@@ -30,7 +29,7 @@ class program{
         switch (Decision_Tienda) {
             //TIENDA 1, CREPPES AND WAFFLES
             case 1 -> {
-                JOptionPane.showMessageDialog(null,"Su eleccion se ha ejecutado correctamente\nBIENVENIDO a nuestra Heladeria Crepes and Waffles", "Creppes And Waffles",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,"Su eleccion se ha ejecutado correctamente\nBIENVENIDO a nuestra Heladeria Crepes and Waffles", "Creppes And Waffles",JOptionPane.INFORMATION_MESSAGE,Creppes_And_Waffles);
                 Eleccion_Helado = Integer.parseInt(JOptionPane.showInputDialog("NUESTRA TIENDA OFRECE LOS SIGUIENTES PRODUCTOS, SELECCIONE CUAL LE GUSTARIA ELEGIR\n 1)Capricho Maracuya              Tiene un valor de $15.000\n 2)Copa Suprema               Tiene un valor de $20.000\n 3)Copa Banana Royal            Tiene un Valor de $30.000\n 4)Copa Brownie            Tiene un valor de $33.000", ""));
                 
                 switch (Eleccion_Helado){
