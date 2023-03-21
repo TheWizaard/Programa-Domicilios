@@ -574,7 +574,7 @@ class program {
 
                                 // TIENDA 3, OXXO
                                 case 3 -> {
-                                        int repetirOXXO = 1, totalTODO = 0, productosPizza, cantidad, cantidadFinal = 0,
+                                        int repetirOXXO = 1, totalTODO = 0, cantidad, cantidadFinal = 0,
                                                         valor, categoriaSeleccion;
                                         JOptionPane.showMessageDialog(null, "Ha seleccionado el OXXO", "OXXO",
                                                         JOptionPane.INFORMATION_MESSAGE);
