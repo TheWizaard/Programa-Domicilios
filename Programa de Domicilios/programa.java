@@ -1,3 +1,4 @@
+//#region INICIO
 import javax.management.openmbean.OpenDataException;
 import javax.print.attribute.standard.JobPriority;
 import javax.swing.*;
@@ -40,9 +41,11 @@ class program {
 
     while (repetir == 1) {
       Decision_Tienda = Integer.parseInt(
-          JOptionPane.showInputDialog("SELECCIONE SU TIENDA\n 1)Heladeria Creppes and Waffles\n 2)Dominos Pizza\n 3)OXXO \n 4)KFC",""));
+          JOptionPane.showInputDialog(
+              "SELECCIONE SU TIENDA\n 1)Heladeria Creppes and Waffles\n 2)Dominos Pizza\n 3)OXXO \n 4)KFC", ""));
 
       switch (Decision_Tienda) {
+//#endregion
         // #region Creppers
         // TIENDA 1, CREPPES AND WAFFLES
         case 1 -> {
@@ -624,7 +627,8 @@ class program {
           break;
         }
         // #endregion
-        // #region OXXO
+       
+        //#region
 
         // TIENDA 3, OXXO
         case 3 -> {
@@ -1911,7 +1915,7 @@ class program {
             totalTODO = 0;
           }
         }
-        // #endregion
+    // #endregion
         case 4 -> {
           // KFC
           int repetirKFC = 1, cantidad, valor, totalTODO = 0, cantidadFinal = 0;
