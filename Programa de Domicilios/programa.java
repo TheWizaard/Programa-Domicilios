@@ -12,6 +12,9 @@ class program {
   public static void main(String[] args) {
     ImageIcon Creppes_And_Waffles = new ImageIcon(
         "Programa de Domicilios/TIENDA_CREPPES.jpeg");
+    ImageIcon DPICONO = new ImageIcon(
+        "Programa de Domicilios/default_cropped_1920px-Domino_s_pizza_logo.PNG");
+
     String Nombre_Usuario, Direccion, Correo_Usuario, Nombre_Titular;
     int DocumentoID, Decision_Tienda, Eleccion_Helado, Metodo_Pago, Codigo_tarjeta, Codigo_Seguridad, repetir = 1,
         seguir = 1;
@@ -418,7 +421,7 @@ class program {
               null,
               "Ha Seleccionado Domino's Pizza",
               "Domino's Pizza",
-              JOptionPane.INFORMATION_MESSAGE);
+              JOptionPane.INFORMATION_MESSAGE,DPICONO);
           while (repetireleccionDP == 1) {
             productosPizza = Integer.parseInt(
                 JOptionPane.showInputDialog(
