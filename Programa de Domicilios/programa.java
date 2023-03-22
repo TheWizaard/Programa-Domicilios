@@ -653,21 +653,37 @@ class program {
                 int categoriaPaqueteria = Integer.parseInt(
                     JOptionPane.showInputDialog(
                         null,
-                        "Selecccione su producto de paquetería: \n 1: Papas Margarita $5.000 \n 2: Doritos $2400 \n 3: Cheetos $2000 \n 4: Yupi $2900"));
+                        "Selecccione su producto de paquetería: \n 1: Papas  \n 2: Doritos $2400 \n 3: Cheetos $2000 \n 4: Yupi $2900"));
+                    
                 switch (categoriaPaqueteria) {
                   case 1:
                     // Papas
-                    JOptionPane.showMessageDialog(
+                    int categoriapapas = Integer.parseInt(
+                    JOptionPane.showInputDialog(
+                        null,
+                        "Selecccione su producto de papas: \n 1: Papas maragrita   \n 2: papas gol \n 3: papas super ricas "));
+                        switch (categoriapapas){
+                            case 1: 
+                            int categoriamargarita=Integer.parseInt(JOptionPane.showInputDialog(null,"Selecccione su producto de papas: \n 1: Papas maragrita de pollo  \n 2: papas margarita de limon \n 3: papas maragarita bbq \n 4: papas margarita natural",JOptionPane.INFORMATION_MESSAGE));
+                            switch(categoriamargarita){
+                                case 1: JOptionPane.showMessageDialog(null, "has selecionado la papas margarita de pollo con valor de $2500","papas de pollo",JOptionPane.INFORMATION_MESSAGE);
+                                cantidad = Integer.parseInt(
+                                    JOptionPane.showInputDialog(
+                                        null,
+                                        "Cuantas Papas Margarita van a ser?"));
+                                valor = 2500;
+                                totalTODO += valor * cantidad;
+                                cantidadFinal = cantidad;
+                                JOptionPane.showMessageDialog(
                         null,
                         "Ha seleccionado las papas margarita que valen $5000");
                     cantidad = Integer.parseInt(
                         JOptionPane.showInputDialog(
                             null,
                             "Cuantas Papas Margarita van a ser?"));
-                    valor = 5000;
+                    valor = 2500;
                     totalTODO += valor * cantidad;
                     cantidadFinal = cantidad;
-
                     Metodo_Pago = Integer.parseInt(
                         JOptionPane.showInputDialog(
                             null,
@@ -760,6 +776,13 @@ class program {
                             JOptionPane.WARNING_MESSAGE);
                         break;
                     } // FIN METODO DE PAGO
+
+                                break;
+                            }
+                            break;
+                        }
+                  
+                    
                     JOptionPane.showMessageDialog(
                         null,
                         "Nombre de Usuario: " +
