@@ -31,7 +31,7 @@ class program {
         "INGRESO DE DATOS",
         JOptionPane.INFORMATION_MESSAGE);
     Nombre_Usuario = JOptionPane.showInputDialog("INTRODUZCA SU NOMBRE", "");
-    Direccion = JOptionPane.showInputDialog("INGRESE SU DIRECCION", """);
+    Direccion = JOptionPane.showInputDialog("INGRESE SU DIRECCION", "");
     Correo_Usuario = JOptionPane.showInputDialog("INGRESE SU CORREO", "");
     DocumentoID = Integer.parseInt(
         JOptionPane.showInputDialog("INGRESE SU DOCUMENTO CC", ""));
